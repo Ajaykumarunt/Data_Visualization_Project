@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <h1>Welcome to Our Dashboard</h1>
+    <h1>Select to View Visualizations</h1>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(
+          135deg,
+          #89f7fe 0%,
+          #66a6ff 100%
+        );
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+      }
+      h1 {
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      #chartButtons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #ffffffc0; /* Semi-transparent white */
+        color: #007bff;
+        border: 1px solid #007bff;
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      button:hover {
+        background-color: #ffffff;
+        color: #0056b3;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+      #myChart,
+      #svgChart {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background: white;
+        margin-top: 20px;
+        border: 1px solid #ddd;
+      }
+      #svgChart {
+        width: 600px; /* Adjust the size as needed */
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chartButtons">
+      <button
+        onclick="window.location.href='https://vizhub.com/Sannihitha23/de98c06dfbcc4c1180b8461f3cc38fce';"
+      >
+        Tableau
+      </button>
+      <button
+        onclick="window.location.href='https://vizhub.com/Sannihitha23/0de774a15c044c23b65e1354dbd3a9e9';"
+      >
+        Python
+      </button>
+      <button id="heatmapBtn">PowerBi</button>
+      <button id="ComparisonofOrdersbyMonthYearBtn">
+        D3.js
+      </button>
+    </div>
+    <canvas
+      id="myChart"
+      width="400"
+      height="400"
+      style="display: none"
+    ></canvas>
+    <img
+      id="svgChart"
+      src=""
+      alt="SVG Chart"
+      style="display: none"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
